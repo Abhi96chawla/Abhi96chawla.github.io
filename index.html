@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Chawla - DevOps Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #1a237e;
+            color: white;
+            width: 250px;
+            padding: 2rem 1rem;
+            position: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .sidebar nav ul li {
+            margin: 1rem 0;
+        }
+
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .sidebar nav ul li a:hover {
+            color: #90caf9;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Main content */
+        .content {
+            margin-left: 250px;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .content section {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #1a237e;
+            margin-bottom: 1rem;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 1rem auto;
+        }
+
+        .skill-container, .projects-grid, .certification-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 1rem auto;
+        }
+
+         .skill-tag, .certification-card, .project-card, .experience-card {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            width: 200px;
+            
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 auto; /* Optional margin for spacing between boxes */
+        }
+
+        .experience-card, .project-card {
+            width: 90%;
+            max-width: 900px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #1a237e;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: block;
+            margin: 1rem auto;
+        }
+
+        button:hover {
+            background: #283593;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h1>Abhishek Chawla</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/abhishek-chawla-61b3b1132"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Abhi96chawla"><i class="fab fa-github"></i></a>
+            <a href="mailto:chawlaa019@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <div class="content">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="1.jpeg" alt="Profile Picture" class="profile-img">
+            <p>Over 5 years of IT experience as a DevOps Engineer specializing in Cloud Computing, System Administration, and Infrastructure Automation. Experienced in CI/CD, Docker, Kubernetes, and AWS, with a focus on delivering high-quality, scalable solutions.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skill-container">
+                <div class="skill-tag">Jenkins</div>
+                <div class="skill-tag">GitLab CI/CD</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">Kubernetes</div>
+                <div class="skill-tag">Ansible</div>
+                <div class="skill-tag">Terraform</div>
+                <div class="skill-tag">AWS</div>
+                <div class="skill-tag">Azure</div>
+                <div class="skill-tag">Python</div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="experience-card">
+                <h3>DevOps Engineer</h3>
+                <h3>Duck Creek Technologies, Chandigarh, India | July 2020 – August 2023</h3>
+                <ul style="text-align: left;list-style-type: none;line-height: 2;list-style-type: square;">
+                    <li>Designed and implemented CI/CD pipelines using Jenkins, resulting in reduced deployment time.</li>
+                    <li>Used Git for version control in DevOps.</li>
+                    <li>Deployed projects in billing, policy, claims management, and compliance for insurance clients.</li>
+                    <li>Orchestrated CI/CD for Java projects using Jenkins and Nexus Repository with Octopus for CD.</li>
+                    <li>Enhanced automation for consistent and efficient software delivery.</li>
+                    <li>Used Dynatrace for server health monitoring and Rundeck for client-specific deployments, reducing time by 55%.</li>
+                    <li>Managed container orchestration with Kubernetes across clusters of hosts.</li>
+                    <li>Developed Docker containers for development and testing, ensuring consistency across all stages.</li>
+                </ul>
+            </div><br>
+
+            <div class="experience-card">
+                <h3>Associate Software Integrator</h3>
+                <h3>OATI, Chandigarh, India | April 2018 – July 2020</h3>
+                <ul style="text-align: left;list-style-type: none;line-height: 2;list-style-type: square;">
+                    <li>Used TFVS for version control and VSTS for continuous integration with Tachyon for CD.</li>
+                    <li>Built CI/CD pipelines in Azure DevOps for various projects.</li>
+                    <li>Automated release notes extraction from Salesforce using custom tools.</li>
+                    <li>Automated database dump generation for development and production environments.</li>
+                    <li>Managed AWS resources with CloudFormation and Terraform for efficient cloud infrastructure provisioning.</li>
+                    <li>Configured and optimized AWS services (EC2, S3, RDS, Lambda) for specific application needs.</li>
+                    <li>Implemented IAM roles and policies for secure AWS resource access.</li>
+                    <li>Utilized AWS CloudWatch to monitor performance and reduce costs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>One Click Project</h3>
+                <ul style="text-align: left;list-style-type: none;line-height: 2;list-style-type: square;">
+				<li>Launched environments on AWS with Terraform and installed Jenkins and Git for automated CI/CD.</li>
+                    <li>Integrated CI/CD in Jenkins using shell scripts linked with Terraform for automation.</li>
+                    <li>Built and deployed containerized applications in development and production environments.</li>
+                    <li>Automated deployment with a single click, handling provisioning and setup.</li>
+                </ul>
+            </div><br>
+
+            <div class="project-card">
+                <h3>MERN Stack Application</h3>
+                <ul style="text-align: left;list-style-type: none;line-height: 2;list-style-type: square;">
+					<li>Containerized a MERN stack application to improve deployment efficiency by 50%.</li>
+                    <li>Used Git, Jenkins, Docker, and Docker Swarm for efficient deployment and version control.</li>
+                    <li>Enhanced scalability and deployment reliability using containerization.</li>
+                </ul>
+            </div><br>
+
+            <div class="project-card">
+                <h3>Microservice Stocker App</h3>
+                <ul style="text-align: left;list-style-type: none;line-height: 2;list-style-type: square;">
+					<li>Developed a microservices-based stock management app using GCP, Docker, and Kubernetes.</li>
+                    <li>Implemented Flask microservices with Jinja2, integrated with GCP MySQL and Pub/Sub.</li>
+                    <li>Deployed on GCP Kubernetes for efficient scaling and management.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certification-grid">
+                <div class="certification-card">AWS Solutions Architect - Associate</div>
+                <div class="certification-card">AWS Cloud Practitioner</div>
+                <div class="certification-card">Azure AZ-900</div>
+                <div class="certification-card">Generative AI (Microsoft & LinkedIn)</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
